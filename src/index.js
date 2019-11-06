@@ -4,5 +4,7 @@ module.exports = {
     findGoodHoursInDay: require('./findGoodHoursInDay'),
     getGanZhi: require('./getGanZhi'),
     isGoodDay: require('./isGoodDay'),
-    getMingNeiyinOfGanZhi: require('./getMingNeiyinOfGanZhi')
+    getMingNeiyinOfGanZhi: require('./getMingNeiyinOfGanZhi'),
+    getSolarTerm: require('./getSolarTerm'),
+    getTruc: require('./getTruc')
   };
