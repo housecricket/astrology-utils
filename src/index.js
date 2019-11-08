@@ -6,7 +6,7 @@ module.exports = {
     isGoodDay: require('./isGoodDay'),
     getMingNeiyinOfGanZhi: require('./getMingNeiyinOfGanZhi'),
     getSolarTerm: require('./getSolarTerm'),
-    getTruc: require('./getTruc'),
+    getOfficerOfDay: require('./getOfficerOfDay'),
     getElementOfDay: require('./getElementOfDay'),
     getGoodStarsInDay: require('./getGoodStarsInDay'),
     getBadStarsInDay: require('./getBadStarsInDay'),
