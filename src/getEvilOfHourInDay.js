@@ -18,7 +18,7 @@ module.exports = (cDay) =>{
     */
 
     zhi = cDay.split(" ")[1]
-    for (const key in gioHacDao){
+    for (const key in evilHoursInDay){
        if (key.split(",").includes(zhi)){
            return evilHoursInDay[key]
        }
