@@ -10,5 +10,8 @@ module.exports = {
     getElementOfDay: require('./getElementOfDay'),
     getGoodStarsInDay: require('./getGoodStarsInDay'),
     getBadStarsInDay: require('./getBadStarsInDay'),
-    getStarOfDay: require('./getStarOfDay')
+    getStarOfDay: require('./getStarOfDay'),
+    getEvilOfHourInDay: require('./getEvilOfHourInDay'),
+    getLuckyDirectionOfHour: require('./getLuckyDirectionOfHour'),
+    getWealthDirectionOfHour: require('./getWealthDirectionOfHour')
   };
