@@ -42,7 +42,7 @@ const goodStarsTable = {
 	"Hoạt diệu* Tốt nhưng gặp Thụ tử thì xấu"	:	"Tỵ,Tuất,Mùi,Tí,Dậu,Dần,Hợi,Thìn,Sửu,Ngọ,Mão,Thân",
 	"Yếu yên*Tốt cho mọi việc nhất là giá thú"	:	"Dần,Thân,Mão,Dậu,Thìn,Tuất,Tỵ,Hợi,Ngọ,Tí,Mùi,Sửu",
 	"Phúc hậu*Tốt cho cầu tài lộc, khai trương"	:	"Dần,Dần,Dần,Tỵ,Tỵ,Tỵ,Thân,Thân,Thân,Hợi,Hợi,Hợi",
-	"Đại hồng sa*Tốt cho mọi việc"	:	"Tí*Sử,Tí*Sử,Tí*Sử,Thìn*Tỵ,Thìn*Tỵ,Thìn*Tỵ,Ngọ*Mùi,Ngọ*Mùi,Ngọ*Mùi,Thân*Tuất,Thân*Tuất,Thân*Tuất",
+	"Đại hồng sa*Tốt cho mọi việc"	:	"Tí*Sửu,Tí*Sửu,Tí*Sửu,Thìn*Tỵ,Thìn*Tỵ,Thìn*Tỵ,Ngọ*Mùi,Ngọ*Mùi,Ngọ*Mùi,Thân*Tuất,Thân*Tuất,Thân*Tuất",
 	"Dân nhật,Thời đức*Tốt cho mọi việc"	:	"Ngọ,Ngọ,Ngọ,Dậu,Dậu,Dậu,Tí,Tí,Tí,Mão,Mão,Mão"
 
 }

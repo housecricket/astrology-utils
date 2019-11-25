@@ -7,9 +7,10 @@ const goodHoursInDayTable = {
 	'Sửu,Mùi': 'Dần, Mão, Tỵ, Thân, Tuất, Hợi'
 }
 
-module.exports = function (day) {
+module.exports = function (cDay) {
+	zhi = cDay.split(" ")[1]
 	for (const key in goodHoursInDayTable){
-		if (key.split(",").includes(day)){
+		if (key.split(",").includes(zhi)){
 			return goodHoursInDayTable[key]
 		}
 	}
