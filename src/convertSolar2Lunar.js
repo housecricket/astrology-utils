@@ -2,6 +2,7 @@ const jdFromDate = require('./jdFromDate')
 const INT = require('./INT')
 const getNewMoonDay = require('./getNewMoonDay')
 const getLunarMonth11 = require('./getLunarMonth11')
+const getLeapMonthOffset = require('./getLeapMonthOffset')
 
 /* Comvert solar date dd/mm/yyyy to the corresponding lunar date */
 module.exports = function (dd, mm, yy, timeZone) {

@@ -1,5 +1,6 @@
 const getSunLongitude = require('./getSunLongitude')
 const getNewMoonDay = require('./getNewMoonDay')
+const INT = require('./INT')
 
 /* Find the index of the leap month after the month starting on the day a11. */
 module.exports = function(a11, timeZone) {
