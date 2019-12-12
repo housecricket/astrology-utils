@@ -57,6 +57,6 @@ module.exports = function(dd, mm, yy){
 		if (solarTermNow && solarTermNow !== solarTermBefore){
 			return solarTermNow
 		}
-    }
+	}
 	return ''
 }

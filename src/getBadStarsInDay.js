@@ -13,8 +13,8 @@ const badStarsTable = {
 	"Thổ kỵ,vãng vong*Kiêng xuất hành giá thú"			:"Dần,Tỵ,Thân,Hợi,Mão,Ngọ,Dậu,Tí,Thìn,Mùi,Tuất,Sửu",
 	"Cô thần*Kiêng giá thú"					:"Tuất,Hợi,Tí,Sửu,Dần,Mão,Thìn,Tỵ,Ngọ,Mùi,Thân,Dậu",
 	"Quả tú*Kiêng giá thú"					:"Thìn,Tỵ,Ngọ,Mùi,Thân,Dậu,Tuất,Hợi,Tí,Sửu,Dần,Mão",
-	"Trùng tang*Kỵ hôn nhân, mai táng, cải táng"				:"Giáp,Ất,Mậu,Bính,Đinh,Kỷ,Canh,Tân,Kỷ,Nhân,Quí,Mậu",
-	"Trùng phục*Kỵ hôn nhân, mai táng, cải táng"				:"Canh,Tân,Kỷ,Nhâm,Quí,Mậu,Giáp,Ất,Kỷ,Bính,Đinh,Mậu",
+	"Trùng tang*Kỵ hôn nhân, an táng, cải táng"				:"Giáp,Ất,Mậu,Bính,Đinh,Kỷ,Canh,Tân,Kỷ,Nhân,Quí,Mậu",
+	"Trùng phục*Kỵ hôn nhân, an táng, cải táng"				:"Canh,Tân,Kỷ,Nhâm,Quí,Mậu,Giáp,Ất,Kỷ,Bính,Đinh,Mậu",
 	"Thiên Lại*Xấu trong mọi việc"	:	"Dậu,Ngọ,Mão,Tí,Dậu,Ngọ,Mão,Tí,Dậu,Ngọ,Mão,Tí",
 	"Tiểu hồng sa*Xấu cho mọi việc"	: "Tỵ,Dậu,Sửu,Tỵ,Dậu,Sửu,Tỵ,Dậu,Sửu,Tỵ,Dậu,Sửu",
 	"Thiên Tặc*Xấu với khởi tạo, động thổ, nhập trạch, khai trương": "Thìn,Dậu,Dần,Mùi,Tí,Tỵ,Tuất,Mão,Thân,Sửu,Ngọ,Hợi",
@@ -31,10 +31,10 @@ const badStarsTable = {
 	"Lục Bất Thành*Xấu với việc xây dựng"	:	"Dần,Ngọ,Tuất,Tỵ,Dậu,Sửu,Thân,Tí,Thìn,Hợi,Mão,Mùi",
 	"Nhân Cách*Xấu với giá thú, khởi tạo"	:	"Dậu,Mùi,Tỵ,Mão,Sửu,Hợi,Dậu,Mùi,Tỵ,Mão,Sửu,Hợi",
 	"Thần Cách*Xấu với tế tự"	:	"Tỵ,Mão,Sửu,Hợi,Dậu,Mùi,Tỵ,Mão,Sửu,Hợi,Dậu,Mùi",
-	"Bạch Hổ*Kỵ mai táng"	:	"Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn",
-	"Huyền Vũ*Kỵ mai táng"	:	"Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi",
-	"Câu Trận*Kỵ mai táng"	:	"Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu",
-	"Lôi công*Kỵ mai táng"	:	"Dần,Hợi,Tỵ,Thân,Dần,Hợi,Tỵ,Thân,Dần,Hợi,Tỵ,Thân",
+	"Bạch Hổ*Kỵ an táng"	:	"Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn",
+	"Huyền Vũ*Kỵ an táng"	:	"Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi",
+	"Câu Trận*Kỵ an táng"	:	"Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu",
+	"Lôi công*Kỵ an táng"	:	"Dần,Hợi,Tỵ,Thân,Dần,Hợi,Tỵ,Thân,Dần,Hợi,Tỵ,Thân",
 	"Cô Thần*Xấu cho việc giá thú"	:	"Tuất,Hợi,Tí,Sửu,Dần,Mão,Thìn,Tỵ,Ngọ,Mùi,Thân,Dậu",
 	"Ly Sàng*Kỵ giá thú"	:	"Dậu,Dậu,Dậu,Dần,Dần,Dần,Tuất,Tuất,Tuất,Tỵ,Tỵ,Tỵ",
 	"Tứ thời cô quả*Kỵ giá thú"	:	"Sửu,Sửu,Sửu,Thìn,Thìn,Thìn,Mùi,Mùi,Mùi,Tuất,Tuất,Tuất",
@@ -57,34 +57,34 @@ const badStarsTable = {
 module.exports = function (lDay, lMonth, cDay) {
     gan = cDay.split(" ")[0]
 	zhi = cDay.split(" ")[1]
-	satTinhs = {}
+	badStars = {}
 
 	if (lDay === 5 || lDay === 14 || lDay === 23){
-		satTinhs['Nguyệt Kỵ'] = 'Xấu cho mọi việc'
+		badStars['Nguyệt Kỵ'] = 'Xấu cho mọi việc'
 	}
 
 	if (lDay === 3 || lDay === 7 ||lDay === 13 || lDay === 18 
 		|| lDay === 22 ||lDay === 27){
-		satTinhs['Tam Nương'] = 'Xấu cho mọi việc'
+		badStars['Tam Nương'] = 'Xấu cho mọi việc'
 	}
 
 	for (let [key, value] of Object.entries(badStarsTable)){
-		value_arr = value.split(",")
-		ganZhiSatTinh = value_arr[lMonth-1].split("*")
-		if (ganZhiSatTinh.includes(gan) || ganZhiSatTinh.includes(zhi) ){
+		valueArr = value.split(",")
+		ganZhiBadStar = valueArr[lMonth-1].split("*")
+		if (ganZhiBadStar.includes(gan) || ganZhiBadStar.includes(zhi) ){
 			arr = key.split("*")
-			satTinh_arr = arr[0]
+			badStarArr = arr[0]
 			notDo = arr[1]
-			if (!satTinh_arr.includes(",")){
-				satTinhs[satTinh_arr] = notDo
+			if (!badStarArr.includes(",")){
+				badStars[badStarArr] = notDo
 			}else{
-				for (const v of satTinh_arr.split(",")){
-					satTinhs[v] = notDo
+				for (const v of badStarArr.split(",")){
+					badStars[v] = notDo
 				}
 			}
 			
 		}
 	}
 
-	return satTinhs
+	return badStars
 }

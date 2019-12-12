@@ -2,7 +2,7 @@ const goodStarsTable = {
 	"Thiên đức*Tốt cho mọi việc"		: 	"Đinh,Thân,Nhâm,Tân,Hợi,Giáp,Quý,Dần,Bính,Ất,Tỵ,Canh",
 	"Thiên đức hợp*Tốt cho mọi việc"	:	"Nhâm,Tỵ,Đinh,Bính,Dần,Kỷ,Mậu,Hợi,Tân,Canh,Thân,Ất",
 	"Nguyệt đức*Tốt cho mọi việc"	: "Bính,Giáp,Nhâm,Canh,Bính,Giáp,Nhâm,Canh,Bính,Giáp,Nhâm,Canh",
-	"Nguyệt đức hợp*Tốt cho mọi việc, Kỵ Tố tụng"	:	"Tân,Kỷ,Đinh,Ất,Tân,Kỷ,Đinh,Ất,Tân,Kỷ,Đinh,Ất",
+	"Nguyệt đức hợp*Tốt cho mọi việc, Kỵ kiện tụng"	:	"Tân,Kỷ,Đinh,Ất,Tân,Kỷ,Đinh,Ất,Tân,Kỷ,Đinh,Ất",
 	"Thiên Phú*Tốt cho mọi việc, nhất là xây dựng nhà cửa, khai trương và an táng"	:	"Thìn,Tỵ,Ngọ,Mùi,Thân,Dâu,Tuất,Hợi,Tí,Sửu,Dần,Mão",
 	"Thiên giải*Tốt cho mọi việc"	: "Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn",
 	"Thiên hỷ*Tốt cho mọi việc"		: "Tuất,Hợi,Tí,Sửu,Dần,Mão,Thìn,Tỵ,Ngọ,Mùi,Thân,Dậu",
@@ -12,7 +12,7 @@ const goodStarsTable = {
 	"Thiên thành*Tốt cho việc cưới gả, giao dịch"	: "Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Mùi,Sửu,Mão,Tỵ",
 	"Thiên quan*Tốt cho việc xuất hành, giao dịch*"	: "Tuất,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân",
 	"Lộc mã*Tốt cho việc xuất hành, di chuyển"		: "Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn",
-	"Giải thần*Giải trừ cát tinh, tốt cho việc tế tự, tố tụng, giải oan"	: "Thân,Thân,Tuất,Tuất,Tí,Tí,Dần,Dần,Thìn,Thìn,Ngọ,Ngọ",
+	"Giải thần*Giải trừ cát tinh, tốt cho việc tế tự, kiện tụng, giải oan"	: "Thân,Thân,Tuất,Tuất,Tí,Tí,Dần,Dần,Thìn,Thìn,Ngọ,Ngọ",
 	"Thiên ân*Được hưởng phúc ân, tốt cho làm nhà, khai trương"		: "Tuất,Sửu,Dần,Tỵ,Dậu,Mão,Tí,Ngọ,Thân,Thìn,Thân,Mùi",
 	"Nguyệt Không*Tốt cho việc sửa nhà, đặt giường"	: "Nhâm,Canh,Bính,Giáp,Nhâm,Canh,Bính,Giáp,Nhâm,Canh,Bính,Giáp",
 	"Thánh Tâm*Tốt cho mọi việc, nhất là cầu phúc, tế tự" : "Hợi,Tỵ,Tí,Ngọ,Sửu,Mùi,Dần,Thân,Mão,Dậu,Thìn,Tuất",
@@ -20,10 +20,9 @@ const goodStarsTable = {
 	"Phúc Sinh*Tốt cho mọi việc": "Dậu,Mão,Tuất,Thìn,Hợi,Tỵ,Tí,Ngọ,Sửu,Mùi,Dần,Thân",
 	"Cát Khánh*Tốt cho mọi việc": "Dậu,Dần,Hợi,Thìn,Sửu,Ngọ,Mão,Thân,Tỵ,Tuất,Mùi,Tí",
 	"Thiên Tài,Kim Quỹ*Tốt cho việc cầu tài lộc, khai trương"	:	"Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần",
-	"Địa Tài*Tố cho việc cầu tài lộc, khai trương"	: "Tỵ,Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Hợi,Sửu,Mão",
+	"Địa Tài*Tốt cho việc cầu tài lộc, khai trương"	: "Tỵ,Mùi,Dậu,Hợi,Sửu,Mão,Tỵ,Mùi,Dậu,Hợi,Sửu,Mão",
 	"Nguyệt Tài*Tốt cho việc cầu tài lộc, khai trương, xuất hành, di chuyển, giao dịch"	: "Ngọ,Tỵ,Tỵ,Mùi,Dậu,Hợi,Ngọ,Tỵ,Tỵ,Mùi,Dậu,Hợi",
 	"Nguyệt Ân*Tốt cho việc cầu tài lộc, khai trương, xuất hành, di chuyển, giao dịch"	: "Bính,Đinh,Canh,Kỷ,Mậu,Tân,Nhâm,Quý,Canh,Ất,Giáp,Tân",
-	// "Thiên Xá*Tốt cho việc tế tự,giải oan, giải trừ được các sao xấu"	:	"Mậu Dần,Mậu Dần,Mậu Dần,Giáp Ngọ,Giáp Ngọ,Mậu Thân,Mậu Thân,Mậu Thân,Giáp Tí,Giáp Tí",
 	"Thiên Phúc*Tốt cho mọi việc"	:	"Kỷ,Mậu,,Tân*Quý,Canh*Nhâm,,Ất,Giáp,,Đinh,Bính,",
 	"Thiên Mã*Tốt cho xuất hành, cầu tài lộc, giao dịch"	: 	"Giáp,Tí,Dần,Thìn,Ngọ,Thân,Tuất,Tí,Dần,Thìn,Ngọ,Thân",
 	"Dịch Mã*Tốt cho việc xuất hành"	: 	"Thân,Tỵ,Dần,Hợi,Thân,Tỵ,Dần,Hợi,Thân,Tỵ,Dần,Hợi",
@@ -50,23 +49,23 @@ const goodStarsTable = {
 module.exports = function (lMonth, cDay) {
     gan = cDay.split(" ")[0]
 	zhi = cDay.split(" ")[1]
-	catTinhs = {}
+	goodStars = {}
 	for (let [key, value] of Object.entries(goodStarsTable)){
-		value_arr = value.split(",")
-		ganZhiCatTinh = value_arr[lMonth-1].split("*")
+		valueArr = value.split(",")
+		ganZhiGoodStar = valueArr[lMonth-1].split("*")
 
-		if (ganZhiCatTinh.includes(gan) || ganZhiCatTinh.includes(zhi)){
+		if (ganZhiGoodStar.includes(gan) || ganZhiGoodStar.includes(zhi)){
 			arr = key.split("*")
-			catTinh_arr = arr[0]
+			goodStarArr = arr[0]
 			shouldDo = arr[1]
-			if (!catTinh_arr.includes(",")){
-				catTinhs[catTinh_arr] = shouldDo
+			if (!goodStarArr.includes(",")){
+				goodStars[goodStarArr] = shouldDo
 			}else{
-				for (const v of catTinh_arr.split(",")){
-					catTinhs[v] = shouldDo
+				for (const v of goodStarArr.split(",")){
+					goodStars[v] = shouldDo
 				}
 			}
 		}
 	}
-	return catTinhs
+	return goodStars
 }
