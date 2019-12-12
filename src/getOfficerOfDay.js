@@ -19,7 +19,7 @@ const getSolarTerm = require('./getSolarTerm');
 const trucTable = ["Kiên", "Trừ", "Mãn", "Bình", "Định", "Chấp", "Phá", "Nguy", "Thành", "Thâu", "Khai", "Bế"];
 
 module.exports = function(dd, mm, yy){
-    var pivot = jdFromDate(23,12,1940)
+    var pivot = jdFromDate(1,1,2019)
     var thisDay = jdFromDate(dd,mm,yy)
     var count = 0
 	for (var i = pivot; i <=thisDay; i++){
