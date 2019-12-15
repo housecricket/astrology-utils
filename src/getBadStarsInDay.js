@@ -13,8 +13,8 @@ const badStarsTable = {
 	"Thổ kỵ,vãng vong*Kiêng xuất hành giá thú"			:"Dần,Tỵ,Thân,Hợi,Mão,Ngọ,Dậu,Tí,Thìn,Mùi,Tuất,Sửu",
 	"Cô thần*Kiêng giá thú"					:"Tuất,Hợi,Tí,Sửu,Dần,Mão,Thìn,Tỵ,Ngọ,Mùi,Thân,Dậu",
 	"Quả tú*Kiêng giá thú"					:"Thìn,Tỵ,Ngọ,Mùi,Thân,Dậu,Tuất,Hợi,Tí,Sửu,Dần,Mão",
-	"Trùng tang*Kỵ hôn nhân, an táng, cải táng"				:"Giáp,Ất,Mậu,Bính,Đinh,Kỷ,Canh,Tân,Kỷ,Nhân,Quí,Mậu",
-	"Trùng phục*Kỵ hôn nhân, an táng, cải táng"				:"Canh,Tân,Kỷ,Nhâm,Quí,Mậu,Giáp,Ất,Kỷ,Bính,Đinh,Mậu",
+	"Trùng tang*Kỵ hôn nhân, an táng, cải táng"				:"Giáp,Ất,Mậu,Bính,Đinh,Kỷ,Canh,Tân,Kỷ,Nhân,Quý,Mậu",
+	"Trùng phục*Kỵ hôn nhân, an táng, cải táng"				:"Canh,Tân,Kỷ,Nhâm,Quý,Mậu,Giáp,Ất,Kỷ,Bính,Đinh,Mậu",
 	"Thiên Lại*Xấu trong mọi việc"	:	"Dậu,Ngọ,Mão,Tí,Dậu,Ngọ,Mão,Tí,Dậu,Ngọ,Mão,Tí",
 	"Tiểu hồng sa*Xấu cho mọi việc"	: "Tỵ,Dậu,Sửu,Tỵ,Dậu,Sửu,Tỵ,Dậu,Sửu,Tỵ,Dậu,Sửu",
 	"Thiên Tặc*Xấu với khởi tạo, động thổ, nhập trạch, khai trương": "Thìn,Dậu,Dần,Mùi,Tí,Tỵ,Tuất,Mão,Thân,Sửu,Ngọ,Hợi",
@@ -51,21 +51,20 @@ const badStarsTable = {
 	"Cửu không*Kỵ xuất hành, cầu tài, khai trương"	:	"Thìn,Sửu,Tuất,Mùi,Mão,Tí,Dậu,Ngọ,Dần,Hợi,Thân,Tỵ",
 	"Tam tang*Kỵ khởi tạo, giá thú, an táng"	:	"Thin,Thìn,Thìn,Mùi,Mùi,Mùi,Tuất,Tuất,Tuất,Sửu,Sửu,Sửu",
 	"Ngũ hư*Kỵ giá thú, khởi tạo, an táng"	:	"Tỵ,Dậu,Sửu,Thân,Tí,Thìn,Hợi,Mão,Mùi,Dần,Ngọ,Tuất",
-
 }
 
 module.exports = function (lDay, lMonth, cDay) {
     gan = cDay.split(" ")[0]
 	zhi = cDay.split(" ")[1]
-	badStars = {}
+	badStars = []
 
 	if (lDay === 5 || lDay === 14 || lDay === 23){
-		badStars['Nguyệt Kỵ'] = 'Xấu cho mọi việc'
+		badStars.push('Nguyệt Kỵ')
 	}
 
 	if (lDay === 3 || lDay === 7 ||lDay === 13 || lDay === 18 
 		|| lDay === 22 ||lDay === 27){
-		badStars['Tam Nương'] = 'Xấu cho mọi việc'
+		badStars.push('Tam Nương')
 	}
 
 	for (let [key, value] of Object.entries(badStarsTable)){
@@ -76,15 +75,14 @@ module.exports = function (lDay, lMonth, cDay) {
 			badStarArr = arr[0]
 			notDo = arr[1]
 			if (!badStarArr.includes(",")){
-				badStars[badStarArr] = notDo
+				badStars.push(badStarArr)
 			}else{
 				for (const v of badStarArr.split(",")){
-					badStars[v] = notDo
+					badStars.push(v)
 				}
 			}
 			
 		}
 	}
-
 	return badStars
 }

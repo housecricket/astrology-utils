@@ -1,24 +1,23 @@
 module.exports = {
     convertSolar2Lunar: require('./convertSolar2Lunar'),
     jdFromDate: require('./jdFromDate'),
-
     findGoodHoursInDay: require('./findGoodHoursInDay'),
     findBadHourInDay: require('./findBadHourInDay'),
-
+    getAuspiciousNInauspicious: require('./getAuspiciousNInauspicious'),
     getGanZhi: require('./getGanZhi'),
     getZhi: require('./getZhi'),
-    
     isGoodDay: require('./isGoodDay'),
     getMingNeiyinOfGanZhi: require('./getMingNeiyinOfGanZhi'),
-    getSolarTerm: require('./getSolarTerm'),
+    getSolarTerm: require('./getSolarTerm2'),
     getOfficerOfDay: require('./getOfficerOfDay'),
     getElementOfDay: require('./getElementOfDay'),
     getGoodStarsInDay: require('./getGoodStarsInDay'),
     getBadStarsInDay: require('./getBadStarsInDay'),
     getStarOfDay: require('./getStarOfDay'),
-    getLuckyDirectionOfHour: require('./getLuckyDirectionOfHour'),
-    getWealthDirectionOfHour: require('./getWealthDirectionOfHour'),
+    getLuckyDirectionOfHour: require('./getLuckyDirectionOfDay'),
+    getWealthDirectionOfHour: require('./getWealthDirectionOfDay'),
     getSolarFestival: require('./getSolarFestival'),
     getLunarFestival: require('./getLunarFestival'),
-    getBadAgeOfDay: require('./getBadAgeOfDay')
+    getBadAgeOfDay: require('./getBadAgeOfDay'),
+    getEvilDirectionOfDay: require('./getEvilDirectionOfDay')
   };

@@ -1,6 +1,6 @@
 const jdFromDate = require('./jdFromDate');
 const jdToDate = require('./jdToDate')
-const getSolarTerm = require('./getSolarTerm');
+const getSolarTerm = require('./getSolarTerm1');
 
 /*
     This function will return "Truc" of the day
@@ -30,8 +30,8 @@ const officerTable = [ "Kiên*Tốt với xuất hành, giá thú nhưng tránh 
                     "Bế*Xấu mọi việc trừ đắp đê, lấp hố, rãnh"
                 ];
 
-module.exports = function(dd, mm, yy){
-    var pivot = jdFromDate(1,1,2019)
+module.exports = function(dd, mm, yy, pivotDD=27, pivotMM=12,pivotYY=2017){
+    var pivot = jdFromDate(pivotDD,pivotMM,pivotYY)
     var thisDay = jdFromDate(dd,mm,yy)
     var count = 0
 	for (var i = pivot; i <=thisDay; i++){
