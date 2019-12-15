@@ -1,6 +1,7 @@
 const getSunLongitude2 = require('./SunLongitude2')
 const jdFromDate = require('./jdFromDate')
 const INT = require('./INT')
+const jdToDate = require('./jdToDate')
 /*
     This function will return the solar term of the day
     Parameter
@@ -120,5 +121,12 @@ module.exports = function(dd, mm, yy){
     nextSolarTerm = solarTermsTable1[nextIdx]
     finishDay = nextJdnSolarterm(jdn, nextSolarTerm)
     startDay = currentJdnSolarTerm(finishDay,currentSolarTerm)
-	return {'currentSolarTerm': currentSolarTerm, 'currentJdn' : startDay, 'nextSolarTerm': nextSolarTerm, 'nextJdn': finishDay}
+
+    finishDate = jdToDate(finishDay)
+    startDate = jdToDate(startDay)
+
+    finishStr = String(finishDate.dd) + '/' + String(finishDate.mm)
+    startStr = String(startDate.dd) + '/' + String(startDate.mm)
+    percentage = INT((jdn-startDay) / (finishDay - startDay) * 100)
+	return {'currentSolarTerm': currentSolarTerm, 'startDate' : startStr, 'nextSolarTerm': nextSolarTerm, 'finishDate': finishStr, 'percentage' : percentage}
 }
