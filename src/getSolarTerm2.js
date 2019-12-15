@@ -76,10 +76,22 @@ var nextJdnSolarterm = function(jdn, nextSolarterm){
             let sunLongitude = INT(getSunLongitude2(jdn + count- 7/24, j))
             let solarTerm = solarTermsTable2[sunLongitude]
             if (solarTerm === nextSolarterm){
-                return count
+                return jdn + count
             }
         }
         count+=1
+    }
+}
+
+var currentJdnSolarTerm = function(jdn, currentSolarTerm){
+    for (let i=16; i>=14; i--){
+        for (let j =0; j<=24; j+=12){
+            let sunLongitude = INT(getSunLongitude2(jdn - i- 7/24, j))
+            let solarTerm = solarTermsTable2[sunLongitude]
+            if (solarTerm === currentSolarTerm){
+                return jdn-i
+            }
+        }
     }
 }
 
@@ -106,7 +118,7 @@ module.exports = function(dd, mm, yy){
     nextIdx = currentIdx + 1 > 23 ? 0 : currentIdx + 1
     currentSolarTerm = solarTermsTable1[currentIdx]
     nextSolarTerm = solarTermsTable1[nextIdx]
-    duration = nextJdnSolarterm(jdn, nextSolarTerm)
-
-	return {'currentSolarTerm': currentSolarTerm, 'currentJdn' : jdn, 'nextSolarTerm': nextSolarTerm, 'nextJdn': jdn + duration}
+    finishDay = nextJdnSolarterm(jdn, nextSolarTerm)
+    startDay = currentJdnSolarTerm(finishDay,currentSolarTerm)
+	return {'currentSolarTerm': currentSolarTerm, 'currentJdn' : startDay, 'nextSolarTerm': nextSolarTerm, 'nextJdn': finishDay}
 }
