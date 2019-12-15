@@ -117,7 +117,7 @@ module.exports = function compare(goodStars, badStars){
     
     goodStars.forEach(goodStar => {
         noteThing.forEach(note =>{
-            if (goodStarsTable[goodStar].includes(note) && !shouldDo.includes(note)){
+            if (typeof(goodStarsTable[goodStar])!== 'undefined' && goodStarsTable[goodStar].includes(note) && !shouldDo.includes(note)){
                 shouldDo.push(note)
             }
         })
