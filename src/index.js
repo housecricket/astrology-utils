@@ -20,5 +20,7 @@ module.exports = {
     getLunarFestival: require('./getLunarFestival'),
     getBadAgeOfDay: require('./getBadAgeOfDay'),
     getBadAgeOfMonth: require('./getBadAgeOfMonth'),
-    getEvilDirectionOfDay: require('./getEvilDirectionOfDay')
+    getEvilDirectionOfDay: require('./getEvilDirectionOfDay'),
+    isLeapYear: require('./isLeapYear'),
+    getNumberOfDayInMonth: require('./getNumberOfDayInMonth')
   };
