@@ -110,7 +110,8 @@ module.exports = function(dd, mm, yy){
 		sunLongitude = INT(getSunLongitude2(jdn - 7/24, j))
 		solarTermNow = solarTermsTable2[sunLongitude]
 		if (solarTermNow && solarTermNow !== solarTermBefore){
-			return solarTermNow
+
+			return String(solarTermNow)
 		}
     }
     

@@ -10,7 +10,7 @@ module.exports = {
     getMingNeiyinOfGanZhi: require('./getMingNeiyinOfGanZhi'),
     getSolarTerm: require('./getSolarTerm2'),
     getOfficerOfDay: require('./getOfficerOfDay'),
-    getElementOfDay: require('./getElementOfDay'),
+    getElement: require('./getElement'),
     getGoodStarsInDay: require('./getGoodStarsInDay'),
     getBadStarsInDay: require('./getBadStarsInDay'),
     getStarOfDay: require('./getStarOfDay'),
@@ -22,5 +22,7 @@ module.exports = {
     getBadAgeOfMonth: require('./getBadAgeOfMonth'),
     getEvilDirectionOfDay: require('./getEvilDirectionOfDay'),
     isLeapYear: require('./isLeapYear'),
-    getNumberOfDayInMonth: require('./getNumberOfDayInMonth')
+    getNumberOfDayInMonth: require('./getNumberOfDayInMonth'),
+    convertDate2String: require('./convertDate2String'),
+    getTimeZodiac: require('./getTimeZodiac'),
   };

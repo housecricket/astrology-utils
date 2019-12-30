@@ -56,15 +56,17 @@ const badStarsTable = {
 module.exports = function (lDay, lMonth, cDay) {
     gan = cDay.split(" ")[0]
 	zhi = cDay.split(" ")[1]
-	badStars = []
+	result = {}
+	result['names'] = []
+	result['notes'] = []
 
 	if (lDay === 5 || lDay === 14 || lDay === 23){
-		badStars.push('Nguyệt Kỵ')
+		result['names'].push('Nguyệt Kỵ')
 	}
 
 	if (lDay === 3 || lDay === 7 ||lDay === 13 || lDay === 18 
 		|| lDay === 22 ||lDay === 27){
-		badStars.push('Tam Nương')
+		result['names'].push('Tam Nương')
 	}
 
 	for (let [key, value] of Object.entries(badStarsTable)){
@@ -75,14 +77,16 @@ module.exports = function (lDay, lMonth, cDay) {
 			badStarArr = arr[0]
 			notDo = arr[1]
 			if (!badStarArr.includes(",")){
-				badStars.push(badStarArr)
+				result['names'].push(badStarArr)
+				result['notes'].push(notDo)
 			}else{
 				for (const v of badStarArr.split(",")){
-					badStars.push(v)
+					result['names'].push(v)
+					result['notes'].push(notDo)
 				}
 			}
 			
 		}
 	}
-	return badStars
+	return result
 }

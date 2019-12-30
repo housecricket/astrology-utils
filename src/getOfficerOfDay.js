@@ -49,6 +49,7 @@ module.exports = function(dd, mm, yy, pivotDD=27, pivotMM=12,pivotYY=2017){
     officer = officerTable[offset % 12].split("*")[0]
     shouldDo = officerTable[offset % 12].split("*")[1]
     result = {}
-    result[officer] = shouldDo
+    result['name'] = officer
+    result['note'] = shouldDo
 	return result
 }

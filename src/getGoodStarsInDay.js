@@ -48,7 +48,10 @@ const goodStarsTable = {
 module.exports = function (lMonth, cDay) {
     gan = cDay.split(" ")[0]
 	zhi = cDay.split(" ")[1]
-	goodStars = []
+	result = {}
+
+	result['names'] = []
+	result['notes'] = []
 	for (let [key, value] of Object.entries(goodStarsTable)){
 		valueArr = value.split(",")
 		ganZhiGoodStar = valueArr[lMonth-1].split("*")
@@ -58,13 +61,15 @@ module.exports = function (lMonth, cDay) {
 			goodStarArr = arr[0]
 			shouldDo = arr[1]
 			if (!goodStarArr.includes(",")){
-				goodStars.push(goodStarArr)
+				result['names'].push(goodStarArr)
+				result['notes'].push(shouldDo)
 			}else{
 				for (const v of goodStarArr.split(",")){
-					goodStars.push(v)
+					result['names'].push(v)
+					result['notes'].push(shouldDo)
 				}
 			}
 		}
 	}
-	return goodStars
+	return result
 }
