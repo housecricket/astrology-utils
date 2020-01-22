@@ -30,7 +30,7 @@ const officerTable = [ "Kiên*Tốt với xuất hành, giá thú nhưng tránh 
                     "Bế*Xấu mọi việc trừ đắp đê, lấp hố, rãnh"
                 ];
 
-module.exports = function(dd, mm, yy, pivotDD=27, pivotMM=12,pivotYY=2017){
+module.exports = function(dd, mm, yy, pivotDD=1, pivotMM=2,pivotYY=1920){
     var pivot = jdFromDate(pivotDD,pivotMM,pivotYY)
     var thisDay = jdFromDate(dd,mm,yy)
     var count = 0

@@ -62,11 +62,13 @@ module.exports = function (lDay, lMonth, cDay) {
 
 	if (lDay === 5 || lDay === 14 || lDay === 23){
 		result['names'].push('Nguyệt Kỵ')
+		result['notes'] = ["Xấu cho mọi việc"]
 	}
 
 	if (lDay === 3 || lDay === 7 ||lDay === 13 || lDay === 18 
 		|| lDay === 22 ||lDay === 27){
 		result['names'].push('Tam Nương')
+		result['notes'] = ["Kỵ giá thú, khai trương, động thổ"]
 	}
 
 	for (let [key, value] of Object.entries(badStarsTable)){
@@ -76,6 +78,7 @@ module.exports = function (lDay, lMonth, cDay) {
 			arr = key.split("*")
 			badStarArr = arr[0]
 			notDo = arr[1]
+
 			if (!badStarArr.includes(",")){
 				result['names'].push(badStarArr)
 				result['notes'].push(notDo)

@@ -48,6 +48,5 @@ module.exports = function getTimeZodiac(cDay){
     timeZodiac['hour'] = '23'
     timeZodiac['ganzhi'] = result[0]['ganzhi']
 	result.push(timeZodiac)
-	console.log(result[12])
 	return result
 }
