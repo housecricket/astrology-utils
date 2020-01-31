@@ -2,10 +2,10 @@ const getOfficerOfDay = require('./getOfficerOfDay')
 const fs = require('fs')
 
 var flag = true
-var calculateDate = new Date(1960,0,1,12,0)
+var calculateDate = new Date(1960, 0, 1, 12, 0)
 var data = []
 var contentJson = {}
-while(flag){
+while (flag) {
     const day = calculateDate.getUTCDate()
     const month = calculateDate.getUTCMonth() + 1
     const year = calculateDate.getUTCFullYear()
@@ -13,7 +13,7 @@ while(flag){
     var dateString = String(day) + "/" + String(month) + "/" + String(year)
     // officer.data.push({ [dateString]: officerData.name})
     contentJson[[dateString]] = officerData.name
-    if (year === 2080 && month === 12 && day === 31){
+    if (year === 2080 && month === 12 && day === 31) {
         flag = false
     }
     calculateDate.setDate(calculateDate.getDate() + 1)
@@ -23,7 +23,7 @@ data.push(contentJson)
 var json = JSON.stringify(data)
 // console.log((json))
 
-fs.writeFile('officer.json', json, 'utf8', function(){
+fs.writeFile('officer.json', json, 'utf8', function () {
     console.log("DONE")
 })
 
