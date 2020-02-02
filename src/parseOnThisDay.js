@@ -7,6 +7,22 @@ var initialData = function(startYear, endYear){
         for (let month=1; month<=12; month++){
             for(let day=1; day<=31; day++){
                 var resultJSON = {}
+                const date = new Date(year, month, day, 12, 0, 0)
+                var strTitle = ''
+                if (day < 10){
+                    strTitle += "0" + String(day)
+                }else{
+                    strTitle += String(day)
+                }
+
+                if (month < 10){
+                    strTitle += "0" + String(month)
+                }else{
+                    strTitle += String(month)
+                }
+                
+                strTitle += String(year)
+                resultJSON["title"] = strTitle
                 resultJSON["day"] = day
                 resultJSON["month"] = month
                 resultJSON["year"] = year
