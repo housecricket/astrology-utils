@@ -9,19 +9,24 @@ var initialData = function(startYear, endYear){
                 var resultJSON = {}
                 const date = new Date(year, month, day, 12, 0, 0)
                 var strTitle = ''
+                strTitle += String(year) + "-"
+
+                if (month < 10){
+                    strTitle += "0" + String(month) + "-"
+                }else{
+                    strTitle += String(month) + "-"
+                }
+
+
                 if (day < 10){
                     strTitle += "0" + String(day)
                 }else{
                     strTitle += String(day)
                 }
 
-                if (month < 10){
-                    strTitle += "0" + String(month)
-                }else{
-                    strTitle += String(month)
-                }
+               
                 
-                strTitle += String(year)
+                
                 resultJSON["title"] = strTitle
                 resultJSON["day"] = day
                 resultJSON["month"] = month
